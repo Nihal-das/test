@@ -1,0 +1,505 @@
+/* CSS for styling */
+.navbar {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make the container height fill the screen */
+}
+
+img {
+  width: 100%;
+  height: 100%; /* Make the image height fill the container */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(
+    68,
+    68,
+    68,
+    0.6
+  ); /* Darker background for better readability */
+  color: #4caf50; /* Bright yellow for the heading text */
+  padding: 20px 30px; /* More padding for better spacing */
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px; /* Optional: Rounded corners */
+  width: 100%;
+  height: 100%; /* Adjust the width as needed */
+}
+
+.text-overlay p {
+  margin-top: 10%;
+  line-height: 1;
+  color: #cccccc;
+  font-size: 100px;
+  font-weight: bold; /* Light grey color for paragraph text */
+}
+.text-overlay #content {
+  color: #cccccc;
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 20%;
+  width: 60%;
+  max-width: fit-content;
+}
+
+.text-overlay button {
+  background-color: #4caf50; /* Bright yellow for the button background */
+  color: #000000; /* Black text for the button */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.text-overlay button:hover {
+  background-color: #0de9ed; /* Darker yellow for hover effect */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333333; /* Dark grey for the main body text */
+}
+
+h4,
+h6,
+h2,
+p {
+  margin: 20px;
+}
+
+h4,
+h6 {
+  color: #007bff; /* Blue for section headings */
+}
+
+h2 {
+  color: #4caf50; /* Green for main headings */
+}
+
+button {
+  background-color: #4caf50; /* Green for main buttons */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green for hover effect */
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.main-child {
+  flex: 1; /* Equal width for both divs */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.main-first .main-second {
+  display: flex;
+  align-items: center;
+  
+}
+
+.second-child1 h4{
+    text-align: left;
+    color: #044806;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.second-child1 h2{
+    text-align: left;
+    color: #044806;
+    font-size: 5cap;
+    font-weight: bolder;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-child1, .second-child2, .button-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .second-child1 {
+    background-color: #f8f9fa;
+  }
+  .second-child2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    width: 48%;
+  }
+  .button-container {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  @media (max-width: 768px) {
+    .second-child2 {
+      flex-direction: column;
+    }
+    .column {
+      width: 100%;
+    }
+  }
+
+  .rounded-button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .column h6{
+    text-align: left;
+    color: #044806;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+.column p{
+    text-align: left;
+}
+
+
+.services-section {
+    padding: 50px;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-section h6 {
+    text-align: left;
+    color: #044806;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+.services-section h2 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #044806;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: white;
+    background-color: #5dae4b;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.service-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  align-items: right; /* Align them vertically */
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Adjust spacing */
+  margin-left: 1000px;
+  margin-bottom: 30px;
+
+}
+.nav-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  
+}
+.nav-btn:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #004d26;
+    color: #ffffff;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Logo and About */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.highlight {
+    color: #6af785;
+}
+
+/* Social Icons */
+.social-icons i {
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Links and Lists */
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.gallery-grid img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4CAF50; /* Light green color on hover */
+}
+
+
+.first {
+    background-color: #f1f1f1; /* Light background for the gallery section */
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.experience-box {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    position: absolute;
+    padding: 10px 20px;
+    top: 450px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 5px; /* Rounded corners */
+    align-self: flex-start; /* Align to the left */
+}
+.experience-box .num{
+    font-size: 80px;
+}
+
+.experience-box .text1{
+    text-align: left;
+    font-size: 30px;
+}
+
+.top-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-left, .image-right {
+    width: 48%; /* Adjust the width as needed */
+    max-height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.bottom-row {
+    width: 100%;
+}
+
+.image-bottom {
+    width: 100%;
+    max-height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+/* scrolling animation */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Start position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* popup animation */
+.popup-container {
+  display: flex;
+  gap: 20px; /* Adds space between items */
+}
+
+.popup-item {
+  padding: 15px 20px;
+  background-color: white; /* Nice color */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.popup-item:hover {
+  transform: scale(1.2); /* Makes the div pop up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+
+
