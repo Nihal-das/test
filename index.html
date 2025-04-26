@@ -158,43 +158,58 @@
     <div class="image-container hidden">
       <img src="assets/BACK1.avif" alt="background image" />
       <div class="text-overlay">
-        <p>
+        <h1>
           Journey with Confidence <br />
-          <span style="color: #4caf50">Migrate</span> With Us
-        </p>
+          <span style="color: #5ad65e">Migrate</span> With Us
+        </h1>
         <p id="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est
-          excepturi reprehenderit iure, aperiam provident nemo! Dicta,
-          animi?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-          ad consectetur magnam dolorem, voluptate esse laboriosam ipsa unde
-          maxime ut, error expedita. Libero dolorem suscipit molestiae minima
+          excepturi reprehenderit iure, aperiam  molestiae minima
           voluptas exercitationem sapiente!
         </p>
-        <button>Learn More</button>
+        <div class="button-container1">
+          <button class="rounded-button1">Learn More &#x2192;</button>
+        </div>
       </div>
     </div>
-    <div class="main hidden" >
+
+    <div class="main hidden">
       <div class="main-child first">
-        <div class="gallery">
-            <div class="experience-box"><span class="num">10+</span><br><span class="text1"> Years Of <br>Experience</span></div>
-            <div class="top-row">
-                <img src="assets/l.jpg" alt="Image 1" class="image-left">
-                <img src="assets/l.jpg" alt="Image 2" class="image-right">
+        <div class="image-collage">
+  
+          <div class="image image1">
+              <img src="assets/l.jpg" alt="Image 1">
+          </div>
+        
+          <div class="image image2">
+              <img src="assets/l.jpg" alt="Image 2">
+          </div>
+        
+          <div class="image image3">
+              <img src="assets/l.jpg" alt="Image 3">
+          </div>
+        
+          <!-- Wrap THIS part inside class="dot" -->
+          <div class="dot">
+            <div class="experience">
+                <p class="exp-box">
+                  <span style="font-size: 50px; font-weight: 700;">10+</span>
+                </p>
+                <p style="text-align: left;">Years Of <br>Experience</p>
             </div>
-            <div class="bottom-row">
-                <img src="assets/l.jpg" alt="Image 3" class="image-bottom">
-            </div>
+          </div>
+        
         </div>
+        
     </div>
+
       <div class="main-child second">
         <div class="second-container">
           <div class="second-child1">
             <h4>ABOUT US ✈︎</h4>
             <h2>Unknown WanderLust Your Journey into</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est
-              excepturi reiciendis amet quaerat tenetur saepe consequuntur quos
-              magnam ducimus, corrupti in sequi reprehenderit iure, aperiam
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum estrit iure, aperiam
               provident nemo! Dicta, animi?
             </p>
           </div>
@@ -202,18 +217,14 @@
             <div class="column">
               <h6>&#x2705; Safety Guides</h6>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                modi atque laborum iure! Voluptates ipsum unde neque libero!
-                Delectus deserunt atque tempora libero illo! Porro aliquid id quo
-                sit eos!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.  id quo
+               
               </p>
             </div>
             <div class="column">
               <h6>&#x2705; Passport Assistance</h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-                voluptatibus. Nulla alias impedit ullam aperiam nostrum optio
-                explicabo. Illum aut alias perferendis eum magni porro sunt? Illo est
                 eum nisi.
               </p>
             </div>
@@ -225,34 +236,35 @@
       </div>
     </div>
 
-    <section class="services-section hiddden">
-      <h6>OUR SERVICES ✈︎ </h6>
-      <h2>Adventure Unleashed <br>Discover Your Next</h2>
-      <div class="navigation hiddden">
-        <button class="nav-btn"> <i class="fas fa-arrow-left"> </i> </button>
-        <button class="nav-btn"> <i class="fas fa-arrow-right"> </i> </button>
-    </div>
-
-      <div class="services-container popup-container">
-          <div class="service-card tour-item popup-item">
-              <i class="fas fa-globe"></i>
-              <h4 style="font-family: 'Space Grotesk', sans-serif;">Food and Wine Tours</h4>
-              <div class=""><p style="font-family: 'Space Grotesk', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.</p></div>
+    <section class="services-section hidden">
+      <div class="services-content">
+          <h6>OUR SERVICES ✈︎</h6>
+          <h2>Adventure Unleashed <br>Discover Your Next</h2>
+          <div class="navigation hidden">
+              <button class="nav-btn"><i class="fas fa-arrow-left"></i></button>
+              <button class="nav-btn"><i class="fas fa-arrow-right"></i></button>
           </div>
-
-          <div class="service-card tour-item popup-item">
-              <i class="fas fa-passport"></i>
-              <h4 style="font-family: 'Space Grotesk', sans-serif;">Travel Opportunities</h4>
-              <div class=""><p style="font-family: 'Space Grotesk', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.</p></div>
-          </div>
-
-          <div class="service-card tour-item popup-item">
-              <i class="fas fa-plane"></i>
-              <h4 style="font-family: 'Space Grotesk', sans-serif;">Solo Travel Planning</h4>
-              <div class=""><p style="font-family: 'Space Grotesk', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.</p></div>
+    
+          <div class="services-container popup-container">
+              <div class="service-card tour-item popup-item">
+                  <i class="fas fa-globe"></i>
+                  <h4>Food and Wine Tours</h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam provident natus accusantium odio deserunt non voluptatum commodi, animi nihil numquam architecto excepturi vel at tenetur fuga quasi doloremque culpa.</p>
+              </div>
+              <div class="service-card tour-item popup-item">
+                  <i class="fas fa-passport"></i>
+                  <h4>Travel Opportunities</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est labore maiores praesentium, eum laborum veritatis culpa provident nihil repellendus ipsum quos suscipit, quod reiciendis dolore sint dolores? Doloremque, dolorem dolores?</p>
+              </div>
+              <div class="service-card tour-item popup-item">
+                  <i class="fas fa-plane"></i>
+                  <h4>Solo Travel Planning</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut? Delectus nesciunt dicta laudantium id exercitationem dolor porro suscipit reiciendis, temporibus tempora quibusdam beatae magni? Repellat placeat eligendi labore? Omnis!</p>
+              </div>
           </div>
       </div>
-  </section>
+    </section>
+    
 
 
   <footer>
